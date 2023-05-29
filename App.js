@@ -1,11 +1,17 @@
-import { StatusBar } from 'expo-status-bar';
+import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+// Para renderizar um componente criado em outra pasta nos precisamos primeiro importar ele
+import Title from './src/components/Title';
+import Main from './src/components/Main/Index';
+
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      {/* Depois de importado basta apenas chamar ele dentro das aspas 
+      que o componente vai ser exibido na tela */}
+      <Title />
+      <Main />
     </View>
   );
 }
@@ -13,8 +19,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: '#e0e5e5',
+    paddingTop: 80,
   },
 });
