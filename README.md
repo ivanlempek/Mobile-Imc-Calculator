@@ -9,4 +9,5 @@ Ambiente utilizado:
 -------------------------------
 
 Para rodar a aplicação basta executar:
+- npm install
 - npm run android
